@@ -14,13 +14,13 @@
 	var qnaNum = -1;
 
 	$(function() {
-		// 문의 답변 스르륵
+		// 문의 글 스르륵 기능
 		$('.qa_li .question').click(
 				function() {
 
 					q = $(".qa_li .question").index(this);
 
-					if (q != qnaNum) { // Q눌렀을 때 답변 스르륵 동작
+					if (q != qnaNum) { // Q눌렀을 때 문의 글 상세내용 보이도록 스르륵 동작
 						$('.qa_li .answer').stop(true, true).slideUp(400);
 						$('.qa_li').removeClass('open');
 						TweenMax.to($('.qa_li .question').eq(qnaNum).find(
