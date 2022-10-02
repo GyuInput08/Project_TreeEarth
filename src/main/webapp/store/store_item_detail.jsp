@@ -128,7 +128,7 @@ int sto_idx = Integer.parseInt(request.getParameter("sto_idx"));
 		<!-- 썸네일 -->
 		<img id="sto_thumbnai" src="img/store/${store.sto_thum_file}" width="600" height="500">
 
-		<!-- 썸네일 옆	 -->
+		<!-- 썸네일 옆 -->
 		<div id="content">
 			<div>
 				<table>
@@ -146,7 +146,7 @@ int sto_idx = Integer.parseInt(request.getParameter("sto_idx"));
 					</tr>
 				</table>
 
-				<!-- 상품  수량  -->
+				<!-- 상품 수량 -->
 				<div id="button">
 					<div id="button_quantity">
 						<span>

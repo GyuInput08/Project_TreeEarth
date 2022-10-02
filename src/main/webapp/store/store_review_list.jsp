@@ -97,18 +97,18 @@ fieldset legend {
 
 	<!-- 게시판 리스트 -->
 	<div class="main">
-
 		<hr>
-		<!-- 스토어 후기 타이틀-->
+		<!-- 스토어 후기 타이틀 -->
 		<div class="r_sto_title">
 			<span>구매 후기</span>
 		</div>
-
+		
 		<!-- 글쓰기 -->
 		<div class="r_sto_title_button">
 			<button id="review_btn">후기 작성하기</button>
 		</div>
 		<hr>
+		
 		<!-- 게시판 구별 -->
 		<div>
 			<span class="r_sto_subject">상품</span> <span class="r_sto_content">내용</span>
@@ -119,32 +119,28 @@ fieldset legend {
 		<!-- 게시판 내용 -->
 		<div>
 			<c:choose>
-				<c:when
-					test="${not empty storeReviewList and pageInfo.itemListCount gt 0}">
+				<c:when test="${not empty storeReviewList and pageInfo.itemListCount gt 0}">
 					<c:forEach var="store_review" items="${storeReviewList }">
-
 						<!-- 제목 -->
 						<div class="r_sto_subject">
-
-							<a
-								href='StoreReviewDetail.st?sto_idx=${store.sto_idx}&sto_re_idx=${store_review.sto_re_idx }&pageNum=${pageInfo.pageNum}'>
+							<a href='StoreReviewDetail.st?sto_idx=${store.sto_idx}&sto_re_idx=${store_review.sto_re_idx }&pageNum=${pageInfo.pageNum}'>
 								<c:choose>
 									<c:when test="${not empty store_review.sto_re_file}">
-										<img class="r_sto_img" alt=""
-											src="img/store/${store_review.sto_re_file }">
+										<img class="r_sto_img" alt="" src="img/store/${store_review.sto_re_file }">
 									</c:when>
 									<c:otherwise>
-										<img alt="기본 이미지" src="img/store/store_reivew_d.png"
-											class="sto_rev_im">
+										<img alt="기본 이미지" src="img/store/store_reivew_d.png" class="sto_rev_im">
 									</c:otherwise>
 								</c:choose>
 							</a>
-
-							<div class="score">${store_review.sto_re_score }</div>
+							
 							<!-- 상품후기 별점 출력 -->
+							<div class="score">${store_review.sto_re_score }</div>
 							<fieldset>
-								<span class="rate1" id="st">⭐</span> <span class="rate2" id="st">⭐</span>
-								<span class="rate3" id="st">⭐</span> <span class="rate4" id="st">⭐</span>
+								<span class="rate1" id="st">⭐</span>
+								<span class="rate2" id="st">⭐</span>
+								<span class="rate3" id="st">⭐</span>
+								<span class="rate4" id="st">⭐</span>
 								<span class="rate5" id="st">⭐</span>
 							</fieldset>
 						</div>
@@ -152,8 +148,7 @@ fieldset legend {
 						<div>
 							<!-- 내용 -->
 							<div class="r_sto_content">
-								<a
-									href='StoreReviewDetail.st?sto_idx=${store.sto_idx}&sto_re_idx=${store_review.sto_re_idx }&pageNum=${pageInfo.pageNum}'>${store_review.sto_re_content }</a>
+								<a href='StoreReviewDetail.st?sto_idx=${store.sto_idx}&sto_re_idx=${store_review.sto_re_idx }&pageNum=${pageInfo.pageNum}'>${store_review.sto_re_content }</a>
 							</div>
 
 							<!-- 작성자 -->

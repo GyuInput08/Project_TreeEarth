@@ -31,11 +31,11 @@
 			</table>
 			<fieldset>
 				<span id="text-bold">?상품은 만족하셨나요</span>
-				<input type="radio" name="reviewStar" value="5" id="rate1"><label for="rate1" class="st">⭐</label>
-		        <input type="radio" name="reviewStar" value="4" id="rate2"><label for="rate2" class="st">⭐</label>
-		        <input type="radio" name="reviewStar" value="3" id="rate3"><label for="rate3" class="st">⭐</label>
-		        <input type="radio" name="reviewStar" value="2" id="rate4"><label for="rate4" class="st">⭐</label>
-		        <input type="radio" name="reviewStar" value="1" id="rate5"><label for="rate5" class="st">⭐</label>
+					<input type="radio" name="reviewStar" value="5" id="rate1"><label for="rate1" class="st">⭐</label>
+		        	<input type="radio" name="reviewStar" value="4" id="rate2"><label for="rate2" class="st">⭐</label>
+		        	<input type="radio" name="reviewStar" value="3" id="rate3"><label for="rate3" class="st">⭐</label>
+		        	<input type="radio" name="reviewStar" value="2" id="rate4"><label for="rate4" class="st">⭐</label>
+		        	<input type="radio" name="reviewStar" value="1" id="rate5"><label for="rate5" class="st">⭐</label>
 			</fieldset>
 			<table>
 				<tr>
@@ -52,9 +52,12 @@
 				</tr>
 				<tr>
 					<td><label for="sto_re_file">후기 사진 첨부</label></td>
-					<td><input type="file" id="sto_re_file" name="sto_re_file"></td>
+					<td>
+						<input type="file" id="sto_re_file" name="sto_re_file">
+					</td>
 				</tr>
 			</table>
+			
 			<section id="commandCell">
 				<input type="submit" value="등록">&nbsp;&nbsp;
 				<input type="reset" value="다시쓰기">&nbsp;&nbsp;

@@ -32,7 +32,8 @@
 			<tr>
 				<td>
 				<a href="img/store/${store_review.sto_re_real_file }">
-				<img id="sto_img" alt="${store_review.sto_re_file }" src="img/store/${store_review.sto_re_real_file }" width="400px" height="300px"></a>
+				<img id="sto_img" alt="${store_review.sto_re_file }" src="img/store/${store_review.sto_re_real_file }" width="400px" height="300px">
+				</a>
 				</td>
 			</tr>
 			<tr>

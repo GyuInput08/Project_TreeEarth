@@ -41,7 +41,7 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 	</div>
 
 	<hr style="color: gray; opacity: 70%; margin: 70px;">
-	<!-- 	상품이 없을 때 -->
+	<!-- 상품이 없을 때 -->
 	<%
 	if (storeList.isEmpty()) {
 	%>
@@ -60,22 +60,22 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 		%>
 		<div class="list">
 
-			<!-- 상품이미지	 -->
+			<!-- 상품이미지	-->
 			<a href="StoreItemDetail.st?sto_idx=<%=dto.getSto_idx()%>"> 
 				<img class="img" src="img/store/<%=dto.getSto_thum_file()%>" alt="" width="500" height="500">
 			</a>
 
-			<!-- 상품명	 -->
+			<!-- 상품명 -->
 			<div class="list_subject">
 				<%=dto.getSto_subject()%>
 			</div>
 
-			<!-- 가격	 -->
+			<!-- 가격 -->
 			<div class="list_subject">
 				<%=dto.getSto_price()%>원
 			</div>
 
-			<!-- 태그	 -->
+			<!-- 태그 -->
 			<div class="list_subject">
 				<span class="sto_tag main_tag"><%=dto.getSto_tag()%></span>
 			</div>
