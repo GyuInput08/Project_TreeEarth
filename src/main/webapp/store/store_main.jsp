@@ -1,10 +1,9 @@
 <%@page import="vo.store.StoreDTO"%>
 <%@page import="java.util.ArrayList"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
-ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("storeList");
+ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("storeList"); // 스토어DTO객체 가져오기
 %>
 <!DOCTYPE html>
 <html>
@@ -15,7 +14,7 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 <title>TreeEarth</title>
 <link href="css/store.css" rel="stylesheet">
 <style type="text/css">
-/* 한림예고 */
+/* 한림고딕 */
 @font-face {
 	font-family: 'HallymGothic-Regular';
 	src:
@@ -28,6 +27,7 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 
 </head>
 <body>
+
 	<!-- 헤더 -->
 	<jsp:include page="../hf/header.jsp"></jsp:include>
 	<!-- 헤더 -->
@@ -37,13 +37,10 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 	<!-- top -->
 
 	<div style="text-align: center;">
-		<h1
-			style="display: block; margin: 70px auto; font-size: 40px; font-family: 'HallymGothic-Regular'; font-weight: 700;">[
-			스토어 ]</h1>
+		<h1 style="display: block; margin: 70px auto; font-size: 40px; font-family: 'HallymGothic-Regular'; font-weight: 700;">[스토어 ]</h1>
 	</div>
 
 	<hr style="color: gray; opacity: 70%; margin: 70px;">
-
 	<!-- 	상품이 없을 때 -->
 	<%
 	if (storeList.isEmpty()) {
@@ -53,8 +50,6 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 	<%
 	}
 	%>
-
-
 
 	<!-- 상품 목록 -->
 	<div class="main">
@@ -66,9 +61,8 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 		<div class="list">
 
 			<!-- 상품이미지	 -->
-			<a href="StoreItemDetail.st?sto_idx=<%=dto.getSto_idx()%>"> <img
-				class="img" src="img/store/<%=dto.getSto_thum_file()%>" alt=""
-				width="500" height="500"> <%-- 							<img class="img" src="img/store/<%=dto.getSto_thum_file() %>" alt="" width="500" height="500"> --%>
+			<a href="StoreItemDetail.st?sto_idx=<%=dto.getSto_idx()%>"> 
+				<img class="img" src="img/store/<%=dto.getSto_thum_file()%>" alt="" width="500" height="500">
 			</a>
 
 			<!-- 상품명	 -->
@@ -81,7 +75,6 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 				<%=dto.getSto_price()%>원
 			</div>
 
-
 			<!-- 태그	 -->
 			<div class="list_subject">
 				<span class="sto_tag main_tag"><%=dto.getSto_tag()%></span>
@@ -91,39 +84,32 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 		<%
 		}
 		%>
-
 	</div>
-
-
 
 	<!-- 페이징 처리 -->
 	<div class="page">
 		<section id="pageList">
 			<c:choose>
 				<c:when test="${pageInfo.pageNum > 1}">
-					<input type="button" value="이전"
-						onclick="location.href='StoreItemList.st?sto_category=${sto_category }&pageNum=${pageInfo.pageNum - 1}'">
+					<input type="button" value="이전" onclick="location.href='StoreItemList.st?sto_category=${sto_category }&pageNum=${pageInfo.pageNum - 1}'">
 				</c:when>
 				<c:otherwise>
 					<input type="button" value="이전">
 				</c:otherwise>
 			</c:choose>
-			<c:forEach var="i" begin="${pageInfo.startPage }"
-				end="${pageInfo.endPage }">
+			<c:forEach var="i" begin="${pageInfo.startPage }" end="${pageInfo.endPage }">
 				<c:choose>
 					<c:when test="${pageInfo.pageNum eq i}">
 					${i }
-				</c:when>
+					</c:when>
 					<c:otherwise>
-						<a
-							href="StoreItemList.st?sto_category=${sto_category }&pageNum=${i }">${i }</a>
+						<a href="StoreItemList.st?sto_category=${sto_category }&pageNum=${i }">${i }</a>
 					</c:otherwise>
 				</c:choose>
 			</c:forEach>
 			<c:choose>
 				<c:when test="${pageInfo.pageNum < pageInfo.maxPage}">
-					<input type="button" value="다음"
-						onclick="location.href='StoreItemList.st?sto_category=${sto_category }&pageNum=${pageInfo.pageNum + 1}'">
+					<input type="button" value="다음" onclick="location.href='StoreItemList.st?sto_category=${sto_category }&pageNum=${pageInfo.pageNum + 1}'">
 				</c:when>
 				<c:otherwise>
 					<input type="button" value="다음">
@@ -132,13 +118,9 @@ ArrayList<StoreDTO> storeList = (ArrayList<StoreDTO>) request.getAttribute("stor
 		</section>
 	</div>
 
-
-
 	<!-- 푸터 -->
 	<jsp:include page="../hf/footer.jsp"></jsp:include>
 	<!-- 푸터 -->
-
-
 
 </body>
 </html>

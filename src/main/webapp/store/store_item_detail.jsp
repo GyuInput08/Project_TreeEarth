@@ -1,7 +1,6 @@
 <%@page import="vo.store.StoreDTO"%>
 <%@page import="java.util.ArrayList"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 int sto_idx = Integer.parseInt(request.getParameter("sto_idx"));
@@ -109,40 +108,28 @@ int sto_idx = Integer.parseInt(request.getParameter("sto_idx"));
 		});
 	});
 </script>
-<!-- <link href="css/button.css" rel="stylesheet"> -->
 <link href="css/store.css" rel="stylesheet">
-
-
 </head>
 <body>
-
 
 	<!-- 헤더 -->
 	<jsp:include page="../hf/header.jsp"></jsp:include>
 	<!-- 헤더 -->
 
-
 	<!-- top -->
 	<jsp:include page="../hf/top.jsp"></jsp:include>
 	<!-- top -->
 
-
 	<!-- 디테일 메인 블럭 -->
 	<div class="main1">
 
-
 		<hr style="color: gray; opacity: 70%; margin: 50px;">
 
-
 		<!-- 썸네일 -->
-		<img id="sto_thumbnai" src="img/store/${store.sto_thum_file}"
-			width="600" height="500">
+		<img id="sto_thumbnai" src="img/store/${store.sto_thum_file}" width="600" height="500">
 
-
-		<!-- 섬네일 옆	 -->
+		<!-- 썸네일 옆	 -->
 		<div id="content">
-
-
 			<div>
 				<table>
 					<tr>
@@ -159,14 +146,14 @@ int sto_idx = Integer.parseInt(request.getParameter("sto_idx"));
 					</tr>
 				</table>
 
-
 				<!-- 상품  수량  -->
 				<div id="button">
 					<div id="button_quantity">
 						<span>
 							<button id="minus_btn">-</button>
-						</span> <input type="text" id="quantity_input" name="amount" value="1"
-							size="2" readonly="readonly"> <span>
+						</span> 
+						<input type="text" id="quantity_input" name="amount" value="1" size="2" readonly="readonly">
+						<span>
 							<button id="plus_btn">+</button>
 						</span><br>
 					</div>
@@ -176,56 +163,35 @@ int sto_idx = Integer.parseInt(request.getParameter("sto_idx"));
 				</div>
 			</div>
 
-
-
-			<!-- 장바구니 담기 버튼 -->
-
+			<!-- 구매하기, 위시리스트 담기, 장바구니 담기 버튼 -->
 			<div class="sto_flex">
 				<input type="button" value="구매하기" id="order" class="sto_od">
-				<input type="button" value="위시리스트 담기" id="insertWishlist"
-					class="sto_od"> <input type="button" value="장바구니 담기"
-					id="insertCart" class="sto_od">
+				<input type="button" value="위시리스트 담기" id="insertWishlist" class="sto_od">
+				<input type="button" value="장바구니 담기" id="insertCart" class="sto_od">
 			</div>
-			<!-- 				<input type="button" value="위시리스트 담기" id="insertWishlist" class="sto_od"> -->
-			<!-- 				<input type="button" value="장바구니 담기" id="insertCart" class="sto_od"> -->
-			<!-- 				<input type="button" value="구매하기" id="order" class="sto_od"> -->
-			<!-- 			</div> -->
-
-
-			<!-- 섬네일 옆끝 -->
+			
+			<!-- 썸네일 옆 끝 -->
 		</div>
-
 
 		<!-- 구매 후기 버튼 / 상품 QnA 버튼 -->
 		<div id="qna">
 			<hr style="color: gray; opacity: 70%; margin: 40px 20px 20px 20px;">
-			<%-- 			<a href="StoreReviewList.st?sto_idx=${store.sto_idx }"><button class="review_btn" type="button">구매 후기</button></a> /  --%>
-			<%-- 			<a href="StoreQnaList.st?sto_idx=${store.sto_idx }&pageNum=1"><button class="review_btn" type="button">상품 문의</button></a> --%>
-			<span
-				onclick="location.href='StoreReviewList.st?sto_idx=${store.sto_idx }'"
-				class="rq_st">구매 후기</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			/&nbsp;&nbsp;&nbsp;&nbsp; <span
-				onclick="location.href='StoreQnaList.st?sto_idx=${store.sto_idx }&pageNum=1'"
-				class="rq_st">상품 문의</span>
+			<span onclick="location.href='StoreReviewList.st?sto_idx=${store.sto_idx }'" class="rq_st">구매 후기</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;
+			<span onclick="location.href='StoreQnaList.st?sto_idx=${store.sto_idx }&pageNum=1'" class="rq_st">상품 문의</span>
 			<hr style="color: gray; opacity: 70%; margin: 20px 20px 40px 20px;">
 		</div>
 
-
 		<div>
-			<a href="img/store/${store.sto_content_file }"><img
-				id="sto_content_file" alt="${store.sto_content_file }"
-				src="img/store/${store.sto_content_file }"></a>
+			<a href="img/store/${store.sto_content_file }">
+			<img id="sto_content_file" alt="${store.sto_content_file }" src="img/store/${store.sto_content_file }">
+			</a>
 		</div>
-
 		<!-- 디테일 메인 블럭 끝-->
 	</div>
-
-
 
 	<!-- 푸터 -->
 	<jsp:include page="../hf/footer.jsp"></jsp:include>
 	<!-- 푸터 -->
-
 
 </body>
 </html>
