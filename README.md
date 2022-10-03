@@ -6,5 +6,4 @@
 **1. 관리자 기능**   
 > * 유스케이스 다이어그램   
 ![유스케이스 다이어그램-관리자](https://user-images.githubusercontent.com/110509005/193608400-be73633a-1b7d-4eda-b25e-1804990940c6.png)   
-> * E-R Diagram   
-![Untitled](https://user-images.githubusercontent.com/110509005/193610711-62882ef4-aaff-440f-9e5a-3b0d714e54d9.png)
+메인페이지
