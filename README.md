@@ -5,7 +5,18 @@
    
 **1. 관리자 기능 구현**   
 > * 유스케이스 다이어그램   
-![슬라이드9](https://user-images.githubusercontent.com/110509005/193634227-76274254-4ae7-4b58-8800-0d661d8d7eca.PNG)
+![슬라이드9](https://user-images.githubusercontent.com/110509005/193634227-76274254-4ae7-4b58-8800-0d661d8d7eca.PNG)   
+   
 > * 메인페이지 : 사이트의 메인화면 입니다. 네 개의 카테고리를 확인할 수 있고 카테고리 별 홍보 배너들을 볼 수 있습니다.   
-![슬라이드17](https://user-images.githubusercontent.com/110509005/193634576-7e126f18-a075-449f-a8d7-30821f3ad513.PNG)
+![슬라이드17](https://user-images.githubusercontent.com/110509005/193634576-7e126f18-a075-449f-a8d7-30821f3ad513.PNG)   
+   
+> * 관리자 계정인 'admin'으로 로그인을 한 후, 계정을 클릭하면 관리자 페이지로 이동합니다. 관리자 페이지에서 판매하는 상품과 회원들의 주문 관리, 캠페인과 후원, 커뮤니티, 회원 목록을 관리 할 수 있습니다.   
+![슬라이드18](https://user-images.githubusercontent.com/110509005/193635101-186ae2d0-5b11-4535-952c-acb68a2fedfc.PNG)   
+
+> * 상품 관리에서는 스토어에 판매하는 상품들을 등록하고 등록 한 상품 목록들을 관리 합니다. 상품 등록 버튼을 클릭하면 판매할 상품의 이름과 가격, 상세 내용, 태그를 작성할 수 있는 폼으로 이동하며 상품 사진 첨부와 반려식물/나무/부자재 등 세 개의 분류 목록을 선택할 수 있습니다.   
+![슬라이드19](https://user-images.githubusercontent.com/110509005/193636877-3acebdc0-db3e-4126-863f-812ee45bc82a.PNG)   
+> 등록 된 상품 목록 버튼을 클릭하면 스토어에 등록한 모든 상품들의 목록을 조회할 수 있습니다. 또한, 상품 목록을 클릭하면 그 상품의 스토어 상세페이지로 이동합니다.   
+![슬라이드20](https://user-images.githubusercontent.com/110509005/193637594-c8efae51-8faf-4b65-a967-be1338d5ef1b.PNG)   
+![슬라이드21](https://user-images.githubusercontent.com/110509005/193637632-93f1ffbd-7e9c-42c6-8ad0-5f73180667ef.PNG)   
+   
 
