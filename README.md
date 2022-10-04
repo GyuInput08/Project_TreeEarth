@@ -97,7 +97,7 @@ Q&A에서는 사용자들이 사이트 이용에 대한 문의글을 작성하�
 ![트리어스_최종본7](https://user-images.githubusercontent.com/110509005/193833404-5bfad123-80e2-4a18-914e-a176eb61835b.png)   
 ![트리어스_최종본8](https://user-images.githubusercontent.com/110509005/193833452-4ab656e9-2dcf-44ee-81dc-35d52fcccbb0.png)   
 ![트리어스_최종본9](https://user-images.githubusercontent.com/110509005/193833489-80b812d4-7c12-4763-b64a-08025ea34683.png)     
-![트리어스_최종본12](https://user-images.githubusercontent.com/110509005/193867337-1df2e866-ce8f-4032-aa75-7a5582839461.png)   
+![트리어스_최종본12](https://user-images.githubusercontent.com/110509005/193869761-43e66ccb-54c1-47b8-8b6d-194e48b909b9.png)   
 
 > * 사용자는 자신의 계정을 클릭하여 마이페이지 기능을 이용할 수 있습니다. 회원정보 수정 또한 계정 아이디와 비밀번호를 통해 할 수 있습니다.   
 ![슬라이드47](https://user-images.githubusercontent.com/110509005/193834912-2fd203bf-c8f5-4f9e-b939-34512f8e75fc.PNG)   
