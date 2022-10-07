@@ -7,7 +7,7 @@
    
 * **프로젝트 개발 기간 : 2022.07.19 ~ 2022.09.07**   
 * **개발 인원 : 총 8명**   
-* **사용 언어 : Java / JSP / JavaScript / HTML5, CSS3**      
+* **사용 언어 : Java / JSP / JavaScript / CSS3 / HTML5**      
 * **개발 Tool : Eclipse**   
 * **서버 : Apache Tomcat**   
 * **데이터베이스 및 형상 관리 : MySQL / GitHub**   
