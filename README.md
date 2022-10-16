@@ -10,8 +10,6 @@
 * **서버 : Apache Tomcat**   
 * **데이터베이스 및 형상 관리 : MySQL / GitHub**   
 * * *   
-* 요구사항 정의서   
-![요구사항정의서](https://user-images.githubusercontent.com/110509005/196038321-b21e7d51-3ba2-4994-be3c-07d1d38a1423.png)   
 ### **1. 관리자 기능 구현**   
 > * 관리자 유스케이스 다이어그램   
 ![슬라이드9](https://user-images.githubusercontent.com/110509005/193634227-76274254-4ae7-4b58-8800-0d661d8d7eca.PNG)   
